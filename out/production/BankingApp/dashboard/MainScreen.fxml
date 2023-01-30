@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.MainScreen">
+    <content>
+        <AnchorPane prefHeight="487.0" prefWidth="760.0" styleClass="bg-general" stylesheets="@../Design/Design.css">
+            <children>
+                <Pane prefHeight="100.0" prefWidth="760.0" style="-fx-background-color: #457d58;">
+                    <children>
+                        <Label layoutX="7.0" prefHeight="100.0" text="Hi," textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="46.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="name" layoutX="68.0" prefHeight="100.0" prefWidth="449.0" text="Your Name" textFill="WHITE">
+                            <font>
+                                <Font name="Impact" size="48.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Label layoutX="14.0" layoutY="115.0" text="Welcome Back,">
+                    <font>
+                        <Font name="Impact" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="body" layoutX="60.0" layoutY="196.0" prefHeight="174.0" prefWidth="663.0" text="Label" />
+                <Pane layoutY="437.0" prefHeight="50.0" prefWidth="760.0">
+                    <children>
+                        <Label layoutX="14.0" layoutY="6.0" prefHeight="38.0" prefWidth="295.0" text="            BUP Central Bank,Mirpur,Dhaka" textFill="#6b6565" />
+                        <FontAwesomeIconView fill="#33b9f9" glyphName="HOME" layoutX="14.0" layoutY="37.0" selectionFill="#457d58" size="30" text="" />
+                        <Label layoutX="285.0" layoutY="6.0" prefHeight="38.0" prefWidth="225.0" text="8000300(Registrar)" textFill="#6b6565" />
+                        <FontAwesomeIconView fill="#457d58" glyphName="PHONE" layoutX="254.0" layoutY="36.0" size="30" text="" />
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>

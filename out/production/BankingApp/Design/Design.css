@@ -1,0 +1,125 @@
+.Login-sidebar{
+ -fx-background-color:#457d58 ;
+}
+.Login-main{
+    -fx-background-color: #cbddd1;
+}
+.Login-forgot{
+    -fx-background-color: white;
+    -fx-text-fill: grey;
+    -fx-cursor: hand;
+}
+.Login-button{
+    -fx-text-fill: #4da773;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-background-color: white;
+    -fx-border-color:#444444;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+}
+.Login-button:hover{
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-background-color: #272727;
+    -fx-border-color:#000000;
+    -fx-border-style: solid;
+    -fx-cursor: hand;
+}
+
+.Login-icon{
+    -fx-fill:#444444;
+
+}
+.Login-button:hover.login-icon{
+    -fx-fill:white;
+
+}
+.close-button:hover{
+     -fx-text-fill: #444444;
+    -fx-fill: red;
+}
+
+.field-decoration{
+    -fx-border-radius: 70px;
+    -fx-background-radius:70px;
+}
+
+.dashboard-top{
+ -fx-background-color: #4d4b4b;
+}
+
+.dashboard-sidebar{
+ -fx-background-color: #4d4b4b;
+}
+.bg-general{
+ -fx-background-color: #cbddd1;
+}
+
+.dashboard-profilepic{
+ -fx-background-color: #4d4b4b;
+}
+
+.dashboard-menu{
+  -fx-text-fill: #D3D3D3;
+  -fx-background-color: #4d4b4b;
+  -fx-font-size:18px;
+  -fx-font-family:calibri;
+  -fx-text-transform:uppercase;
+  -fx-font-weight:bold;
+  -fx-alignment: CENTER_LEFT;
+}
+
+.dashboard-menu:hover{
+  -fx-text-fill: white;
+  -fx-border-color: #0D8BC5;
+  -fx-border-width: 0px 0px 0px 5px;
+  -fx-background-color: transparent;
+  -fx-cursor:hand;
+}
+
+.dashboard-menu:pressed{
+  -fx-text-fill: #0DA9F1;
+  -fx-border-color: #0D8BC5;
+  -fx-background-color: transparent;
+}
+
+.dashboard-menu-icons{
+    -fx-fill:#D3D3D3;
+
+}
+
+.dashboard-menu:pressed .dashboard-menu-icons{
+    -fx-fill:#0DA9F1;
+
+}
+
+.dashboard-btns{
+    -fx-background-color:white;
+    -fx-text-fill:#0DA9F1;
+}
+
+.dashboard-btns:hover{
+    -fx-background-color:white;
+    -fx-text-fill:#0DA9F1;
+    -fx-cursor:hand;
+}
+.Login-cloose{
+-fx-text-fill: white;
+    -fx-text-fill: #444444;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-background-color: white;
+    -fx-border-color:#444444;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+}
+.Login-cloose:hover{
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-background-color: #E50003;
+    -fx-border-color:#000000;
+    -fx-border-style: solid;
+    -fx-cursor: hand;
+}
+

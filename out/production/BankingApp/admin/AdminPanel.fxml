@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseDragged="#drag" onMousePressed="#click" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminPanel">
+    <children>
+        <Pane prefHeight="52.0" prefWidth="1000.0" styleClass="dashboard-top" stylesheets="@../Design/Design.css">
+            <children>
+                <FontAwesomeIconView fill="WHITE" glyphName="BANK" layoutX="14.0" layoutY="32.0" size="20" text="" />
+                <Label layoutX="51.0" layoutY="12.0" text="BUP Central Bank Limited" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" layoutX="974.0" layoutY="36.0" onMouseClicked="#closeApp" size="30" />
+                <FontAwesomeIconView fx:id="ico" fill="WHITE" glyphName="MINUS" layoutX="943.0" layoutY="38.0" onMouseClicked="#minimizeApp" size="30" text="" />
+            </children>
+        </Pane>
+        <ScrollPane layoutY="52.0" prefHeight="548.0" prefWidth="240.0">
+            <content>
+                <Pane prefHeight="548.0" prefWidth="225.0" styleClass="dashboard-sidebar" stylesheets="@../Design/Design.css">
+                    <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#customerInfo" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../Design/Design.css" text="Customer Details" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button layoutY="49.0" mnemonicParsing="false" onMouseClicked="#allowedBank" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../Design/Design.css" text="Allowed Bank" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button layoutY="99.0" mnemonicParsing="false" onMouseClicked="#deposit" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../Design/Design.css" text="Deposit" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+            </content>
+        </ScrollPane>
+        <Pane layoutX="240.0" layoutY="52.0" prefHeight="61.0" prefWidth="760.0">
+            <children>
+                <Label layoutX="14.0" layoutY="18.0" text="Admin Dashboard" textFill="#656565">
+                    <font>
+                        <Font name="Calibri Bold" size="21.0" />
+                    </font>
+                </Label>
+                <FontAwesomeIconView glyphName="HOME" layoutX="670.0" layoutY="44.0" onMouseClicked="#mainScreen" size="40" tabSize="0" text="" />
+                <FontAwesomeIconView glyphName="SIGN_OUT" layoutX="716.0" layoutY="41.0" onMouseClicked="#logout" size="30" wrappingWidth="29.571428298950195">
+                    <font>
+                        <Font size="20.0" />
+                    </font></FontAwesomeIconView>
+            </children>
+        </Pane>
+        <Pane fx:id="dashboard_main" layoutX="240.0" layoutY="113.0" prefHeight="487.0" prefWidth="760.0" style="-fx-background-color: white;" />
+    </children>
+</AnchorPane>

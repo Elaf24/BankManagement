@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerInfo.CustomerInfo">
+   <content>
+      <AnchorPane prefHeight="487.0" prefWidth="760.0" styleClass="bg-general" stylesheets="@../Design/Design.css">
+         <children>
+            <TableView fx:id="customerTableView" prefHeight="489.0" prefWidth="762.0" styleClass="bg-general" stylesheets="@../Design/Design.css">
+              <columns>
+                <TableColumn fx:id="info_name" minWidth="15.0" prefWidth="127.0" text="Name" />
+                  <TableColumn fx:id="info_AcNO" prefWidth="127.0" text="A/C NO." />
+                <TableColumn fx:id="info_ACType" prefWidth="127.0" text="A/C Type" />
+                  <TableColumn fx:id="info_Balance" prefWidth="127.0" text="Balance" />
+                  <TableColumn fx:id="info_DOB" prefWidth="127.0" text="DOB" />
+                  <TableColumn fx:id="info_Address" prefWidth="127.0" text="Address" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

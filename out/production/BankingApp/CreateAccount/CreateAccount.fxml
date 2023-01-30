@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateAccount.CreateAccount">
+    <content>
+        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="1200.0" prefWidth="450.0" styleClass="bg-general" stylesheets="@../Design/Design.css">
+            <children>
+                <FontAwesomeIconView glyphName="CLOSE" layoutX="420.0" layoutY="31.0" onMouseClicked="#closeApp" size="20" />
+                <FontAwesomeIconView glyphName="ARROW_LEFT" layoutX="14.0" layoutY="31.0" onMouseClicked="#backToLogin" size="20" />
+                <Label layoutX="96.0" layoutY="34.0" text="Account Registration">
+                    <font>
+                        <Font name="Impact" size="30.0" />
+                    </font>
+                </Label>
+                <Label layoutX="95.0" layoutY="80.0" text="Fill the form carefully to create an account">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="121.0" layoutY="111.0" text="Personal Information" textFill="#7c7c7c">
+                    <font>
+                        <Font name="Impact" size="24.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="name" layoutX="55.0" layoutY="155.0" prefHeight="38.0" prefWidth="340.0" promptText="Full Name" styleClass="field-decoration" stylesheets="@../Design/Design.css">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="idcardno" layoutX="55.0" layoutY="203.0" prefHeight="38.0" prefWidth="340.0" promptText="ID Card No" styleClass="field-decoration" stylesheets="@../Design/Design.css">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="mobileno" layoutX="55.0" layoutY="252.0" prefHeight="38.0" prefWidth="340.0" promptText="Mobile No" styleClass="field-decoration" stylesheets="@../Design/Design.css">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <ComboBox fx:id="religion" layoutX="55.0" layoutY="400.0" prefHeight="38.0" prefWidth="340.0" promptText="Religion" styleClass="field-decoration" stylesheets="@../Design/Design.css" />
+                <ComboBox fx:id="martialStatus" layoutX="55.0" layoutY="354.0" prefHeight="38.0" prefWidth="340.0" promptText="Marital status" styleClass="field-decoration" stylesheets="@../Design/Design.css" />
+                <ComboBox fx:id="gender" layoutX="55.0" layoutY="302.0" prefHeight="38.0" prefWidth="340.0" promptText="Gender" styleClass="field-decoration" stylesheets="@../Design/Design.css" />
+                <Label layoutX="109.0" layoutY="600.0" text="Account Information" textFill="#7c7c7c">
+                    <font>
+                        <Font name="Impact" size="24.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="city" layoutX="55.0" layoutY="495.0" prefHeight="38.0" prefWidth="340.0" promptText="City" styleClass="field-decoration" stylesheets="@../Design/Design.css">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="accountno" layoutX="55.0" layoutY="642.0" prefHeight="38.0" prefWidth="340.0" promptText="Account No" styleClass="field-decoration" stylesheets="@../Design/Design.css">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="address" layoutX="55.0" layoutY="551.0" prefHeight="38.0" prefWidth="340.0" promptText="Address" styleClass="field-decoration" stylesheets="@../Design/Design.css">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="balance" layoutX="55.0" layoutY="696.0" prefHeight="38.0" prefWidth="340.0" promptText="Balance" styleClass="field-decoration" stylesheets="@../Design/Design.css">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <ComboBox fx:id="accountype" layoutX="55.0" layoutY="747.0" prefHeight="38.0" prefWidth="340.0" promptText="Account Type" styleClass="field-decoration" stylesheets="@../Design/Design.css" />
+                <TextField fx:id="pin" layoutX="55.0" layoutY="803.0" prefHeight="38.0" prefWidth="340.0" promptText="PIN" styleClass="field-decoration" stylesheets="@../Design/Design.css">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <ComboBox fx:id="questions" layoutX="55.0" layoutY="866.0" prefHeight="38.0" prefWidth="340.0" promptText="Security Question" styleClass="field-decoration" stylesheets="@../Design/Design.css" />
+                <TextField fx:id="answer" layoutX="55.0" layoutY="917.0" prefHeight="38.0" prefWidth="340.0" promptText="Answer" styleClass="field-decoration" stylesheets="@../Design/Design.css">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <ImageView fx:id="pic" fitHeight="129.0" fitWidth="112.0" layoutX="55.0" layoutY="970.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/default_pic.jpg" />
+                    </image>
+                </ImageView>
+                <Button fx:id="browse_pic" layoutX="55.0" layoutY="1105.0" mnemonicParsing="false" onMouseClicked="#setUpPic" prefHeight="25.0" prefWidth="134.0" styleClass="Login-button" stylesheets="@../Design/Design.css" text="   Browse Picture" />
+                <Button layoutX="80.0" layoutY="1148.0" mnemonicParsing="false" onMouseClicked="#newAccount" prefHeight="30.0" prefWidth="300.0" styleClass="field-decoration" stylesheets="@../Design/Design.css" text="Create Account" />
+                <FontAwesomeIconView glyphName="UPLOAD" layoutX="69.0" layoutY="1122.0" text="" />
+                <DatePicker fx:id="dob" layoutX="55.0" layoutY="446.0" prefHeight="38.0" prefWidth="340.0" promptText="Date of birth" />
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>
