@@ -53,3 +53,8 @@ This Project focues on how to add database to my project and manage it.
 - Dynamically updating themes
 - Multi-threading with Tasks, Services, Threads
 - Custom JavaFX nodes
+### USER INTERFACE
+![image](https://github.com/Elaf24/BankManagement/assets/110555263/0c33ac1a-843e-417d-896d-9354dd14fd23)
+![image](https://github.com/Elaf24/BankManagement/assets/110555263/f930afd5-b595-49dc-b7c5-ae298a5776e6)
+
+
